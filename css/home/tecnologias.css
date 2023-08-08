@@ -1,0 +1,97 @@
+.tecnologias-bg {
+  background-color: var(--cor-11);
+  box-shadow: inset 0 80px var(--cor-0), inset 0 -80px var(--cor-0);
+  margin-top: 120px;
+}
+
+.tecnologias-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+
+.tecnologias-descricao-span {
+  font: 600 24px/1.5 "Poppins", sans-serif;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 80px;
+  display: block;
+}
+
+.tecnologias-descricao h3 {
+  padding: 160px 0px 20px 0px;
+  margin: 0px;
+}
+
+.tecnologias-descricao h2 {
+  padding-bottom: 32px;
+}
+
+.tecnologias-descricao p {
+  padding-bottom: 20px;
+}
+
+.tecnologias-descricao-span::after {
+  content: "";
+  display: block;
+  width: 261px;
+  height: 4px;
+  background: var(--cor-p1);
+  position: absolute;
+}
+
+.tecnologias-detalhes {
+  display: flex;
+  gap: 40px;
+  padding-bottom: 180px;
+}
+
+.tecnologias-detalhes img {
+  padding-bottom: 8px;
+}
+
+.tecnologias-detalhes h4 {
+  padding-bottom: 8px;
+}
+
+.tecnologias-imagem img {
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 800px) {
+  .tecnologias-bg {
+    background-color: var(--cor-11);
+    box-shadow: inset 0 0px var(--cor-0), inset 0 0px var(--cor-0);
+    margin-top: 40px;
+  }
+
+  .tecnologias-div {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .tecnologias-descricao h3 {
+    padding: 60px 0px 20px 0px;
+    margin: 0px;
+  }
+
+  .tecnologias-imagem img {
+    display: none;
+  } 
+
+  .tecnologias-detalhes {
+    padding-bottom: 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  .tecnologias-detalhes {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .tecnologias-descricao-span {
+    padding-bottom: 60px;
+  }
+}

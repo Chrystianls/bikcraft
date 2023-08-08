@@ -1,93 +1,14 @@
-body {
-  margin: 0px;
-  font-family: Arial, Helvetica, sans-serif;
-}
+@import "/css/global/global.css";
+@import "/css/global/header.css";
 
-p, h1, h2, h3, a {
-  margin: 0px;
-  padding: 0px;
-  text-decoration: none;
-}
+/* Utilidades */
+@import "/css/utilidades/componentes.css";
+@import "/css/utilidades/tipografia.css";
+@import "/css/utilidades/cores.css";
 
-ul {
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
-}
+/* Home */
+@import "/css/home/introdução.css";
+@import "/css/home/tecnologias.css"; 
 
-.menu-bg {
-  background-color: #000000;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 1200px;
-}
-
-.menu-div { 
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.menu-nav{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-}
-
-.menu-nav a {
-  font-size: 1.1 25rem;
-  color: #ffffff;
-  padding: 16px 0px;
-  display: inline-block;
-  position: relative;
-}
-
-.menu-nav a:after {
-  content: '';
-  position: absolute;
-  display: block;
-  height: 2px;
-  width: 0px;
-  background: #ffffff;
-  margin-top: 4px;
-  transition: 0.3s;
-}
-
-.menu-nav a:hover:after {
-  width: 100%;
-}
-
-@media (max-width: 800px) {
-  .menu-nav {
-    gap: 20px;
-  }
-  
-  .menu-nav a {
-    background: #111111;
-    padding: 8px 12px;
-    border-radius: 4px;
-  }
-
-  .menu-nav a:after {
-    display: none;
-  }
-
-  .menu-nav a:hover {
-    background-color: #2e2e2e;
-  }
-}
-
-@media (max-width: 600px) {
-  .menu-nav {
-    gap: 12px;
-  }
-
-  .menu-nav a {
-    font-size: 14px;
-    padding: 10px;
-  }
-}
+/* bicicletas */
+@import "/css/bicicletas/bicicletas-lista.css";
