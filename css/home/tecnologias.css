@@ -2,6 +2,7 @@
   background-color: var(--cor-11);
   box-shadow: inset 0 80px var(--cor-0), inset 0 -80px var(--cor-0);
   margin-top: 120px;
+  position: relative;
 }
 
 .tecnologias-div {
@@ -36,8 +37,12 @@
   display: block;
   width: 261px;
   height: 4px;
-  background: var(--cor-p1);
+  background: currentColor;
   position: absolute;
+}
+
+.tecnologias-descricao-span:hover {
+  color: var(--cor-0);
 }
 
 .tecnologias-detalhes {
@@ -55,8 +60,28 @@
 }
 
 .tecnologias-imagem img {
+  width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: left;
+}
+
+.tecnologias-bg:after {
+  content: '';
+  display: block;
+  width: 52px;
+  height: 52px;
+  background: url(/img/dec/bottom-left.svg) no-repeat center;
+  color: var(--cor-10);
+  position: absolute;
+  margin-top: -172px;
+  margin-left: 40px;
+}
+
+@media (max-width: 1500px) {
+  .tecnologias-bg:after {
+    display: none;
+  } 
 }
 
 @media (max-width: 800px) {
